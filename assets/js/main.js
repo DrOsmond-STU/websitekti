@@ -78,9 +78,13 @@
     dots.forEach((dot, i) =>
       dot.addEventListener("click", () => { goTo(i); startAuto(); })
     );
-    const heroEl = document.querySelector(".hero");
-    heroEl?.addEventListener("mouseenter", stopAuto);
-    heroEl?.addEventListener("mouseleave", startAuto);
+    // Pause only while the pointer is over the controls themselves (not
+    // the whole hero, which fills nearly the full viewport — pausing on
+    // any hover there meant auto-rotate would freeze for the whole visit
+    // any time the cursor happened to rest over the hero).
+    const heroControls = document.querySelector(".hero-controls");
+    heroControls?.addEventListener("mouseenter", stopAuto);
+    heroControls?.addEventListener("mouseleave", startAuto);
     startAuto();
   }
 
