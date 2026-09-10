@@ -57,23 +57,8 @@
 
 <!-- ============ HERO ============ -->
 <section class="hero" id="beranda">
-  <div class="hero-bg-pattern">
-    <svg viewBox="0 0 1200 800" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
-      <g stroke="#E8BE6D" stroke-width="1" fill="none">
-        <circle cx="180" cy="140" r="3" fill="#E8BE6D"></circle>
-        <circle cx="420" cy="90" r="3" fill="#E8BE6D"></circle>
-        <circle cx="980" cy="180" r="3" fill="#E8BE6D"></circle>
-        <circle cx="1080" cy="420" r="3" fill="#E8BE6D"></circle>
-        <circle cx="760" cy="620" r="3" fill="#E8BE6D"></circle>
-        <circle cx="260" cy="560" r="3" fill="#E8BE6D"></circle>
-        <path d="M180 140 L420 90 L760 210 L980 180"></path>
-        <path d="M420 90 L520 300 L760 620"></path>
-        <path d="M980 180 L1080 420 L760 620"></path>
-        <path d="M180 140 L260 560 L760 620"></path>
-        <circle cx="520" cy="300" r="3" fill="#E8BE6D"></circle>
-      </g>
-    </svg>
-  </div>
+  <div class="hero-bg-pattern" aria-hidden="true"></div>
+  <canvas class="hero-constellation" id="heroConstellation" aria-hidden="true"></canvas>
 
   <div class="container">
     <div class="hero-slides" id="heroSlides">
@@ -867,6 +852,7 @@
   </button>
 </div>
 
+<script src="assets/js/constellation.js"></script>
 <script src="assets/js/main.js"></script>
 </body>
 </html>
