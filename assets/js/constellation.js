@@ -23,8 +23,8 @@
     window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
   var LINK_DIST = 130; // px, connection radius between nodes
-  var NODE_COLOR = "232,190,109"; // accent gold (--c-accent-500)
-  var LINE_COLOR = "23,175,145"; // primary teal (--c-primary-500)
+  var NODE_COLOR = "245,166,35";   // accent gold (--c-accent-500)
+  var LINE_COLOR = "46,138,239";   // primary blue (--c-primary-500)
 
   var particles = [];
   var cssWidth = 0;
